@@ -1,0 +1,54 @@
+/* TEMPORARY WEBSITE MAINTENANCE STYLESHEET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 18px;
+  background-color: #161616;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #757575;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+p {
+  color: #757575;
+  font-weight: 300;
+}
+
+/* ANIMATED UNDERLINE */
+
+.cmn-t-underline {
+  color: #ababab;
+  position: relative;
+}
+
+.cmn-t-underline:after {
+  width: 0;
+  left: 0px;
+  content: "";
+  height: 3px;
+  bottom: -10px;
+  display: block;
+  position: absolute;
+  background-color: #ababab;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.cmn-t-underline:hover {
+  color: #ababab;
+}
+
+.cmn-t-underline:hover:after {
+  width: 100%;
+}
